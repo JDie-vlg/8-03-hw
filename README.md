@@ -1,4 +1,4 @@
-# Домашнее задание к занятию Работа с данными (DDL/DML) - Борзенков Валерий
+# Домашнее задание к занятию "Расширенные возможности SQL" - Борзенков Валерий
 
 
 ---
@@ -47,4 +47,5 @@ FROM sakila.payment
 GROUP BY YEAR(payment_date), MONTH(payment_date)
 ORDER BY total_amount DESC
 LIMIT 1;`
+
 ![img.png](img/img_2.png)
