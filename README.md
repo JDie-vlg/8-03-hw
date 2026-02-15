@@ -50,6 +50,7 @@ and first_name in ('Kelly', 'Willie');`
 	left(email, position('@' in email)-1) as email_before_at,
 	right(email, CHAR_LENGTH(email) - position('@' in email)) as email_after_at
 from sakila.customer`
+
 ![img_4.png](img/img_4.png)
 
 ---
