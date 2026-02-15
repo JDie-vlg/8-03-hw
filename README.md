@@ -23,6 +23,8 @@ join sakila.store st on st.store_id = customer_count.store_id
 join sakila.address a on a.address_id = st.address_id
 join sakila.city c on c.city_id = a.city_id;`
 
+![img.png](img.png)
+
 ---
 
 ### Задание 2
