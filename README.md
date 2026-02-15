@@ -23,31 +23,28 @@ join sakila.store st on st.store_id = customer_count.store_id
 join sakila.address a on a.address_id = st.address_id
 join sakila.city c on c.city_id = a.city_id;`
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 ---
 
 ### Задание 2
 
-``
+`SELECT COUNT(*) AS films_count
+FROM sakila.film
+WHERE length > (SELECT AVG(length) FROM sakila.film);`
 
+![img.png](img/img_1.png)
 ---
 
 ### Задание 3
 
-``
-
----
-
-### Задание 4
-
-``
-
----
-
-### Задание 5
-
-``
-
-
----
+`SELECT 
+    YEAR(payment_date) AS year,
+    MONTH(payment_date) AS month,
+    SUM(amount) AS total_amount,
+    COUNT(*) AS rental_count
+FROM sakila.payment
+GROUP BY YEAR(payment_date), MONTH(payment_date)
+ORDER BY total_amount DESC
+LIMIT 1;`
+![img.png](img/img_2.png)
