@@ -15,6 +15,6 @@ master-master - Копирование данных с одного сервер
 
 Конфигурации приложены в папках `master` и `slave`
 
-![img.png](img/img.png)
+![img.png](img/img_12.png)
 
-![img.png](img/img_1.png)
+![img.png](img/img_13.png)
