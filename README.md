@@ -15,15 +15,15 @@ master-сервер и несколько slave-серверов - мастер 
 
 ### Вертикальный шардлинг
 
-![img/users.png](img/users.png)
+![img/users.png](img/users.png) \
 **users_base** - основные данные \
 **users_profile** - данные подтягивающиеся при необходимости
 
-![img/books.png](img/books.png)
+![img/books.png](img/books.png) \
 **books_base** - основные данные для отображения книги в списке \
 **books_details** - данные подтягивающиеся при подробной информации
 
-![img/stores.png](img/stores.png)
+![img/stores.png](img/stores.png) \
 **stores_base** - основные данные для отображения в списке \
 **stores_info** - детальные данные о магазине
 
@@ -36,11 +36,11 @@ master-сервер и несколько slave-серверов - мастер 
 Таблица **stores** - ключ **city** 
 
 Способы шардирования:
-![img/users_h.png](img/users_h.png)
+![img/users_h.png](img/users_h.png) \
 `shard_id = hash(user_id) % num_shards`
 
-![img/books_h.png](img/books_h.png)
+![img/books_h.png](img/books_h.png) \
 `shard_id = hash(book_id) % num_shards`
 
-![img/stores_h.png](img/stores_h.png)
+![img/stores_h.png](img/stores_h.png) \
 `shard_id = sum_sales / sales_number * 100`
